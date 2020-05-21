@@ -188,6 +188,6 @@ function randomCards()
 
 function switchColors()
 {
-
     modal.classList.add('hidden');
+
 }
