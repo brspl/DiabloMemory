@@ -73,6 +73,31 @@ p {
     letter-spacing: 2px;
 }
 
+.square {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /*  opacity  */
+    /* ponizsze podejscie daje opacity na parent i wszyskie child
+	
+	background: black;
+	opacity: 80%; 
+	
+	dlatego musimy uzyć rgba, aby opacity bylo tylko na parent
+	*/
+    background: rgba(0, 0, 0, 0.8);
+    /* 	button centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
 @media only screen and (max-width: 650px) {
     .board {
         grid-template-columns: 100px 100px;

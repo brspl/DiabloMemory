@@ -16,6 +16,9 @@ var c13 = document.getElementById('c13');
 var c14 = document.getElementById('c14');
 var c15 = document.getElementById('c15');
 
+let modal = document.getElementById('modal');
+
+
 c0.addEventListener("click", function ()
 {
     revealCard(0);
@@ -181,4 +184,10 @@ function randomCards()
         cards.push(heroes[rand_id]);
         heroes.splice(rand_id, 1);
     }
+}
+
+function switchColors()
+{
+
+    modal.classList.add('hidden');
 }
