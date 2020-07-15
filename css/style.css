@@ -12,6 +12,12 @@ body {
     font-size: 28px;
     text-align: center;
     font-family: 'Diablo Heavy';
+    /* Disable Text Selection Highlighting */
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1 {
@@ -80,13 +86,6 @@ p {
     top: 0;
     left: 0;
     /*  opacity  */
-    /* ponizsze podejscie daje opacity na parent i wszyskie child
-	
-	background: black;
-	opacity: 80%; 
-	
-	dlatego musimy uzyć rgba, aby opacity bylo tylko na parent
-	*/
     background: rgba(0, 0, 0, 0.8);
     /* 	button centering */
     display: flex;
